@@ -1,15 +1,31 @@
 body {
-    background-color: white;
+    background-color: grey;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
+
+
 h1 {
-    color: blue;
+    color: black;
     font-size: 40px;
+    text-align: center;
 }
 
 p {
-    color: green;
+    color: black;
+    text-align: center;
 }
-a{
-    color: blueviolet;
+a {
+    color: white;
+    display: block;
+    text-align: center;
 }
