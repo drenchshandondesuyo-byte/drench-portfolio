@@ -7,105 +7,151 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+
     <section id="info" class="hero">
-    <img src="images/IMG_0007.jpg" alt="Profile photo">
+    <img src="images/IMG_0333.png" alt="Profile photo">
 
     <h1 class="full name">Drench Shandon U. Desuyo</h1>
     <p class="info">I'm a Information Sytem student at Caraga State University, Aspiring a Web Developer</p>
     <p class="tagline">"Code with purpose."</p>
     
-    <a href="#about">Learn More</a>
-    <a href="#skills">About Skills</a>
+    <a href="#about" class="learn-more">Learn More</a>
+    <a href="#skills" class="skills">About Skills</a>
+    <a href="#projects" class="projects">My Projects</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
 
+            <div class="Biography">
+                <h3>Biography</h3>
+                    <p>
+                    Hi! I'm Drench Shandon U. Desuyo, an Information System student
+                    at Caraga State University. I am an aspiring web developer who
+                    enjoys learning about technology and creating websites.
+                    </p>
+            </div>
+
+    <section id="hobbies-goals">
+        <div class="Hobbies">
+            <h3>Hobbies and Interests</h3>
+            <ul>
+                    <li>Programming</li>
+                    <li>Web Development</li>
+                    <li>Exploring New Technologies</li>
+                    <li>Designing Websites</li>
+            </ul>
+        </div>
+            <div class="Goals">
+                <h3>My Goals</h3>
+                    <p>
+                    My goal is to become a skilled and professional web developer.
+                    I want to improve my programming, web development, and
+                    problem-solving skills and create useful applications.
+                    </p>
+            </div>
     </section>
 
-     <section id="about">
-
-    <h2>About Me</h2>
-
-    <h3>Biography</h3>
-    <p>
-        Hi! I'm Drench Shandon U. Desuyo, an Information System student
-        at Caraga State University. I am an aspiring web developer who
-        enjoys learning about technology and creating websites.
-    </p>
-
-    <h3>Hobbies and Interests</h3>
-
-    <ul>
-        <li>Programming</li>
-        <li>Web Development</li>
-        <li>Exploring New Technologies</li>
-        <li>Designing Websites</li>
-    </ul>
-
-    <h3>My Goals</h3>
-    <p>
-        My goal is to become a skilled and professional web developer.
-        I want to improve my programming, web development, and
-        problem-solving skills and create useful applications.
-    </p>
-
-    <h3>Academic Background</h3>
-    <p>
-        I am currently studying Information Systems at Caraga State
-        University. Through my studies, I am learning programming,
-        web development, database management, and other technology
-        concepts.
-    </p>
-
-</section>
-
-<section id="skills">
-
-    <h2>My Skills</h2>
-
-    <div class="skill-card">
-        <h3>HTML</h3>
-        <p>
-            I can create and structure webpages using HTML.
-        </p>
-    </div>
-
-    <div class="skill-card">
-        <h3>CSS</h3>
-        <p>
-            I can style webpages and create simple layouts using CSS.
-        </p>
-    </div>
-
-    <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>
-            I have basic knowledge of JavaScript for adding
-            interactivity to websites.
-        </p>
-    </div>
-
-    <div class="skill-card">
-        <h3>C Programming</h3>
-        <p>
-            I can create basic programs and solve problems using C.
-        </p>
-    </div>
-
-    <div class="skill-card">
-        <h3>Git and GitHub</h3>
-        <p>
-            I can use Git and GitHub to manage and store my projects.
-        </p>
-    </div>
-
-    <div class="skill-card">
-        <h3>Database Management</h3>
-        <p>
-            I have basic knowledge of databases and managing data.
-        </p>
-    </div>
-
-</section>
+            <div class="Academic">
+                <h3>Academic Background</h3>
+                    <p>
+                        I am currently studying Information Systems at Caraga State
+                        University. Through my studies, I am learning programming,
+                        web development, database management, and other technology
+                        concepts.
+                    </p>
+            </div>
+    </section>
 
 
+    <section id="skills">
+        <h2>My Skills</h2>
+        
+            <section id="grid-container">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                        <p>
+                            I can create and structure webpages using HTML.
+                        </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                        <p>
+                            I can style webpages and create simple layouts using CSS.
+                        </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                        <p>
+                            I have basic knowledge of JavaScript for adding
+                            interactivity to websites.
+                        </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>C Programming</h3>
+                        <p>
+                            I can create basic programs and solve problems using C.
+                        </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Git and GitHub</h3>
+                        <p>
+                            I can use Git and GitHub to manage and store my projects.
+                        </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Database Management</h3>
+                        <p>
+                            I have basic knowledge of databases and managing data.
+                        </p>
+                </div>
+            </section>
+    </section>
+
+       
+
+     <section id="projects">
+        <h2>My Projects</h2>
+        <p class="section-sub">A few things I've built so far</p>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="images/Mitz.png" alt="Mit'z Flowershop Website">
+                <div class="project-card-body">
+                    <h3>Mit'z Flowershop Website</h3>
+                    <p>A stylish, responsive e-commerce web design built to showcase floral products and brand identity.</p>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://mitzflowershop.vercel.app/#/" target="_blank" class="view-project">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/Pets.png" alt="Pet Adoption System screenshot">
+                <div class="project-card-body">
+                    <h3>Pet Adoption System</h3>
+                    <p>An interactive web application with database management to track pets, adoption listings, and user <inquiries class=""></inquiries></p>
+                    <p>HTML, CSS, JavaScript, Database</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/Portfolio.png" alt="Student Records Database screenshot">
+                <div class="project-card-body">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive personal portfolio built to showcase my background, skills, and projects.</p>
+                    <p> HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
 </body>
