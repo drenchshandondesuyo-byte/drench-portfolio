@@ -8,6 +8,61 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 12px rgba(17, 24, 39, 0.05);
+}
+
+.nav-brand {
+    font-size: 22px;
+    font-weight: 900;
+    padding-left: 60px;
+    color: Black;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: darkblue;
+}
+
+.nav-cta {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-right: 60px;
+    transition: background-color 0.3s;
+}
+
+.nav-cta:hover {
+    color: white;
+    background-color: black;
+}
+
 .hero {
     min-height: 100vh;
 
@@ -20,81 +75,7 @@ body {
     text-align: center;
 }
 
-.learn-more{
-    background-color: white;
-    color: black;
-    height: 35px;
-    width: 500px;
-    border-radius: 10px;
-    border-color: rgb(17, 3, 77);
-    border-width: 1px;
-    border-style: solid;
-    text-decoration: none;
-    line-height: 35px;
-    transition: background-color 0.5s;
-}
 
-.learn-more:hover{
-    background-color: black;
-    color: white;
-}
-
-.skills{
-    background-color: white;
-    color: black;
-    height: 35px;
-    width: 500px;
-    border-radius: 10px;
-    border-color: rgb(17, 3, 77);
-    border-width: 1px;
-    border-style: solid;
-    text-decoration: none;
-    line-height: 35px;
-    transition: background-color 0.5s;
-}
-
-.skills:hover{
-    background-color: black;
-    color: white;
-}
-
-.projects{
-    background-color: white;
-    color: black;
-    height: 35px;
-    width: 500px;
-    border-radius: 10px;
-    border-color: rgb(17, 3, 77);
-    border-width: 1px;
-    border-style: solid;
-    text-decoration: none;
-    line-height: 35px;
-    transition: background-color 0.5s;
-}
-
-.projects:hover{
-    background-color: black;
-    color: white;
-}
-
-.education{
-    background-color: white;
-    color: black;
-    height: 35px;
-    width: 500px;
-    border-radius: 10px;
-    border-color: rgb(17, 3, 77);
-    border-width: 1px;
-    border-style: solid;
-    text-decoration: none;
-    line-height: 35px;
-    transition: background-color 0.5s;
-}
-
-.education:hover{
-    background-color: black;
-    color: white;
-}
 
 img {
     width: 200px;
@@ -119,56 +100,25 @@ p {
 }
 
 a {
-    color: white;
-    display: block;
-    text-align: center;
-    margin: 10px;
+    color: white; /* Keeps natural cascading colors instead of forcing white */
+    text-decoration: none;
+
 }
 
 
 #about {
-    padding: 50px;
-    margin: 20px;
+    padding: 70px;
+    margin: 0 auto;
     height: 100%;
+    width: 80%;
 }
 
-.Biography {
+.about-card {
     background-color: white;
     border: 2px solid white;
-    border-radius: 50px;
-    padding: 50px;
+    border-radius: 20px;
+    padding: 20px;
     margin: 20px;
-    border: 2px white solid;
-    text-align: center;
-    box-shadow: 5px 5px 15px #dfdddd;
-}
-
-.Hobbies {
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 50px;
-    margin: 20px;
-    box-shadow: 5px 5px 15px #dfdddd;
-}
-
-.Goals {
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 50px;
-    margin: 20px;
-    text-align: center;
-    box-shadow: 5px 5px 15px #dfdddd;
-}
-
-.Academic {
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 50px;
-    margin: 20px;
-    text-align: center;
     box-shadow: 5px 5px 15px #dfdddd;
 }
 
@@ -186,11 +136,14 @@ a {
 #about h3 {
     font-size: 25px;
     margin-top: 25px;
+    margin-top: 0; 
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 #about p {
     font-size: 17px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 #about ul {
@@ -204,12 +157,10 @@ a {
 /*======== Skills Section ============*/
 
 #skills {
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
-    margin: 20px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
+    padding: 70px;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
 }
 
 #grid-container {
@@ -220,12 +171,12 @@ a {
 }
 
 .skill-card {
-   background-color: white;
+background-color: white;
     border: 2px solid white;
-    border-radius: 50px;
-    padding: 50px;
+    border-radius: 20px;
+    padding: 20px;
     margin: 20px;
-    text-align: center;
+    box-shadow: 5px 5px 15px #dfdddd;
     transition: transform 0.3s;
 }
 
@@ -233,11 +184,15 @@ a {
     transform: translateY(-6px);
 }
 
+#skills h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
 .skill-card h3 {
     font-size: 25px;
     color: black;
     text-align: center;
-    display: inline-block;
 }
 
 .skill-card p {
@@ -247,11 +202,10 @@ a {
 
 /*======== Project Section ============*/
 #projects {
-    padding: 50px;
-    margin: 20px;
-    text-align: center;
-    font-size: 30px;
-
+   padding: 70px;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
 }
 
 .project-grid {
@@ -270,6 +224,11 @@ a {
 
 .project-card:hover {
     transform: translateY(-6px);
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 35px;
 }
 
 .project-card img {
@@ -326,7 +285,7 @@ a {
 
 
 .table-container {
-    width: 100%;
+    width: 80%;
     overflow-x: auto;
     margin: 0 auto;
     border-radius: 20px;
@@ -336,7 +295,6 @@ a {
 #education table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
 }
 
 #education th,
