@@ -8,6 +8,49 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+
+    display: block;
+}
+
+h1 {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+a {
+    color: white; /* Keeps natural cascading colors instead of forcing white */
+    text-decoration: none;
+
+}
+
 /* Navbar */
 #navbar {
     position: sticky;
@@ -62,49 +105,6 @@ body {
     color: white;
     background-color: black;
 }
-
-.hero {
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
-
-
-
-img {
-    width: 200px;
-    height: 200px;
-
-    object-fit: cover;
-
-
-    display: block;
-}
-
-h1 {
-    color: black;
-    font-size: 60px;
-    text-align: center;
-    font-weight: 600;
-}
-
-p {
-    color: black;
-    text-align: center;
-}
-
-a {
-    color: white; /* Keeps natural cascading colors instead of forcing white */
-    text-decoration: none;
-
-}
-
 
 #about {
     padding: 70px;
@@ -289,6 +289,7 @@ background-color: white;
     overflow-x: auto;
     margin: 0 auto;
     border-radius: 20px;
+
 }
 
 
@@ -315,4 +316,132 @@ background-color: white;
 
 #education tbody tr:hover {
     background-color: #e0e0e0;
+}
+
+
+/* ===============  Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#contact > p {
+    margin-bottom: 30px;
+}
+
+
+/* Contact */
+.contact-wrap {
+    background-color: white;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+
+.contact-info {
+    background-color: white;
+    color: black;
+    padding: 50px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    text-align: left;
+    color: black;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+
+.contact-info p {
+    color:black;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.contact-detail {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.contact-icon {
+    font-size: 18px;
+}
+
+.contact-detail strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.contact-detail p,
+.contact-detail a {
+    color: black;
+    font-size: 13px;
+}
+
+.contact-form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    color: black;
+}
+
+.contact-form label:first-child {
+        margin-top: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 13px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: black;
+}
+
+.contact-form button {
+    margin-top: 25px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: black;
+    color: white;
 }
