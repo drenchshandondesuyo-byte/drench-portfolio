@@ -77,6 +77,25 @@ body {
     color: white;
 }
 
+.education{
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 500px;
+    border-radius: 10px;
+    border-color: rgb(17, 3, 77);
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+    line-height: 35px;
+    transition: background-color 0.5s;
+}
+
+.education:hover{
+    background-color: black;
+    color: white;
+}
+
 img {
     width: 200px;
     height: 200px;
@@ -182,6 +201,8 @@ a {
     margin: 10px;
 }
 
+/*======== Skills Section ============*/
+
 #skills {
     font-size: 30px;
     padding: 50px;
@@ -224,6 +245,7 @@ a {
     color: black;
 }
 
+/*======== Project Section ============*/
 #projects {
     padding: 50px;
     margin: 20px;
@@ -287,4 +309,52 @@ a {
     text-align: left;
 }
 
+/*======== Education and Experience Section ============*/
+#education {
+    padding: 50px 20px;
+    text-align: center;
+}
 
+#education h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#education > p {
+    margin-bottom: 30px;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#education th,
+#education td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+}
+
+#education th {
+    background-color: #333;
+    color: white;
+}
+
+#education tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#education tbody tr:hover {
+    background-color: #e0e0e0;
+}
